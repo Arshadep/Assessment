@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Test1.Models.Request>
+
+@{
+    ViewBag.Title = "MyRequest";
+}
+
+<h2>MyRequest</h2>
+
+<table class="table table-sm table-dark">
+    <tr class="btn-success">
+        <th class="">
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UpdatedAt)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr class="btn-default">
+        <td class="table-bordered">
+            @Html.DisplayFor(modelItem => item.CreatedAt)
+                @Html.HiddenFor(modelItem => item.RequestId)
+
+        </td>
+        <td class="table-bordered">
+            @if (item.Status == 0)
+            {
+                <p>pending</p>
+            }
+            else if (item.Status == 1)
+            {
+                <p>Approved</p>
+            }
+            else {
+                <p>Rejected</p>
+            }
+
+        </td>
+        <td class="table-bordered">
+            @Html.DisplayFor(modelItem => item.UpdatedAt)
+        </td>
+        
+    </tr>
+}
+
+</table>

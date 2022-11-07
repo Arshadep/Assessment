@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="900">
+    <Grid Margin="20,0,20,20" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="186*"/>
+            <RowDefinition Height="179*"/>
+            <RowDefinition Height="34*"/>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.RowSpan="2"/>
+        <DataGrid x:Name="dtRequest" SelectionChanged="dtRequest_SelectionChanged" HorizontalAlignment="Left" Height="360" Margin="17,21,-425,0" VerticalAlignment="Top" Width="420" Grid.RowSpan="3"/>
+        <Button x:Name="Submit" Click="Submit_Click" Content="Submit" HorizontalAlignment="Left" Margin="-340,25,0,0" VerticalAlignment="Top" Width="147" Grid.Row="1" Height="39"/>
+        <Label Content="RequestID" HorizontalAlignment="Left" Margin="-395,46,0,0" VerticalAlignment="Top" Height="41" Width="90"/>
+        <TextBox x:Name="txtRequestID" HorizontalAlignment="Left" Height="23" Margin="-287,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <RadioButton x:Name="rbtApprove" Content="Approve" HorizontalAlignment="Left" Margin="-390,129,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtReject" Content="Reject" HorizontalAlignment="Left" Margin="-266,132,0,0" VerticalAlignment="Top" Width="134"/>
+    </Grid>
+
+
+
+</Window>

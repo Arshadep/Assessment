@@ -1,0 +1,7 @@
+D:\impcode\MVCTest\Test1\RequestWcfService\bin\RequestWcfService.dll.config
+D:\impcode\MVCTest\Test1\RequestWcfService\bin\RequestWcfService.dll
+D:\impcode\MVCTest\Test1\RequestWcfService\bin\RequestWcfService.pdb
+D:\impcode\MVCTest\Test1\RequestWcfService\obj\Debug\RequestWcfService.csproj.CoreCompileInputs.cache
+D:\impcode\MVCTest\Test1\RequestWcfService\obj\Debug\RequestWcfService.dll
+D:\impcode\MVCTest\Test1\RequestWcfService\obj\Debug\RequestWcfService.pdb
+D:\impcode\MVCTest\Test1\RequestWcfService\obj\Debug\RequestWcfService.csproj.AssemblyReference.cache
